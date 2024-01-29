@@ -11,7 +11,7 @@ function changeBackgroundColor() {
   body.style.backgroundColor = randomColor;
   colorSpan.textContent = randomColor;
 
-  // Optional: You can also set the text color based on the luminance of the background color
+  
   const luminance = calculateLuminance(randomColor);
   colorSpan.style.color = luminance > 0.5 ? 'black' : 'white';
 }
@@ -24,6 +24,5 @@ function calculateLuminance(hexColor) {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 }
 
-// Attach the changeBackgroundColor function to the button click event
 const changeColorButton = document.querySelector('.change-color');
 changeColorButton.addEventListener('click', changeBackgroundColor);
