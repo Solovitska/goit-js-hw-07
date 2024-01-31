@@ -6,7 +6,7 @@ categoryItems.forEach((categoryItem) => {
   const subcategoryCount = categoryItem.lastElementChild.childElementCount;
 //Audit
   console.log(`Category: ${categoryName}`);
-  console.log(`Elemens: ${subcategoryCount}`);
+  console.log(`Elements: ${subcategoryCount}`);
 });
 
 
